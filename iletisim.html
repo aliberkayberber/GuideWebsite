@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patika.dev</title>
+    <!--Style config-->
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-bottom: 60px;
+            background-color: antiquewhite;
+        }
+        header{
+            background-color: bisque;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+        main{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 17px;
+        }
+        footer{
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            font-size: 12px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--Nav bar-->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home Page</a></li>
+                <li><a href="./servisler.html">Services</a></li>
+                <li><a href="./iletisim.html">Contact</a></li>
+                <li><a href="./hakkinda.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Contact section-->
+        <h2>Contact</h2>
+        <p>If you want to reach us
+            <ul>
+                <li><a href="https://x.com/patika_dev" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/patika.dev/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/school/patikadev/posts/?feedView=all" target="_blank">Linkedin</a></li>
+            </ul>
+        </p>
+        <br>
+        <p>Let us call you for more information</p>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Form</legend>
+                <div>
+                    <label for="fname">Full name: </label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <br>
+                    <small>Format: 123-456-7890</small>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" name="Terms[]" value="terms">Kişisel verilerin işlenmesinde ilişkin <a href="https://drive.google.com/file/d/1MdDfNAqD74uXJ2wujRcOfWNzS8EPQT3M/view" target="_blank">aydınlatma metni</a> okudum anladım.
+                </div>
+                <br>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4" cols="40"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <!--footer-->
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 Guide Website. Tüm haklari saklidir. <a asp-area="" ></a>
+        </div>
+    </footer>
+</body>
+</html>
